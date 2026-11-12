@@ -8,20 +8,37 @@
     <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
 
     <!-- SEO -->
-    <meta name="robots" content="noindex, nofollow" />
     <title>Cétofine 21 | Programmes minceur hyperprotéinés pour femme</title>
     <meta name="description" content="Le régime protéiné Cétofine 21 en 4 paliers : programmes de 14 à 90 jours, 180 recettes, une conseillère au téléphone. Goûtez dès 15 €. Laboratoire français depuis 1996." />
-    <!-- URL définitive à confirmer avec le client (sous-domaine prévu : lp.cetofine.com) -->
-    <link rel="canonical" href="https://convtek.github.io/lp-cetofine21-offre-femme/" />
+    <!-- Page de campagne, volontairement hors index (même consigne dans robots.txt) -->
+    <meta name="robots" content="noindex, nofollow" />
+    <!-- Adresse de production prévue. Si la page est servie ailleurs, changer ici canonique, og:url et og:image -->
+    <link rel="canonical" href="https://lp.cetofine.com/" />
 
     <!-- Open Graph -->
     <meta property="og:title" content="Cétofine 21 | Le régime protéiné en 4 paliers" />
     <meta property="og:description" content="Programmes minceur de 14 à 90 jours, 180 recettes, une conseillère au téléphone. Goûtez dès 15 €." />
-    <meta property="og:image" content="https://convtek.github.io/lp-cetofine21-offre-femme/images/hero.webp" />
+    <meta property="og:image" content="https://lp.cetofine.com/images/hero.webp" />
+    <meta property="og:url" content="https://lp.cetofine.com/" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="fr_FR" />
 
     <!-- GTM HEAD -->
+    <!-- Conteneur GTM de la boutique (GTM-PV8VWC3), repris tel qu'il est chargé sur www.cetofine.com (relevé le 2026-11-12).
+         Servi depuis le domaine du client (devle.cetofine.com), pas depuis googletagmanager.com.
+         Les cookies d'attribution sont posés dès la landing et partagés avec la boutique (domaine .cetofine.com). -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || []
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' })
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : ''
+        j.async = true
+        j.src = 'https://devle.cetofine.com/basldo7nt78cj2e.js?awl=' + i.replace(/^GTM-/, '') + dl
+        f.parentNode.insertBefore(j, f)
+      })(window, document, 'script', 'dataLayer', 'GTM-PV8VWC3')
+    </script>
     <!-- End GTM HEAD -->
 
     <!-- Structured Data -->
@@ -31,7 +48,7 @@
       "@type": "Product",
       "name": "Programme Minceur 30 Jours pour Femme",
       "description": "Programme hyperprotéiné clé en main de 30 jours en 4 paliers : 112 sachets, guide minceur, multivitamines et shakers.",
-      "image": "https://convtek.github.io/lp-cetofine21-offre-femme/images/kit-30j.webp",
+      "image": "https://lp.cetofine.com/images/kit-30j.webp",
       "brand": {
         "@type": "Brand",
         "name": "Cétofine 21"
@@ -45,11 +62,12 @@
       }
     }
     </script>
-    <script type="module" crossorigin src="./index-CCoAHWac.js"></script>
-    <link rel="stylesheet" crossorigin href="./index-DxeK5yci.css">
+    <script type="module" crossorigin src="./index-DhCM8s08.js"></script>
+    <link rel="stylesheet" crossorigin href="./index-THZ87jZ0.css">
   </head>
   <body>
     <!-- GTM BODY -->
+    <!-- Pas d'iframe noscript : la page exige JavaScript, et la boutique n'en charge pas non plus -->
     <!-- End GTM BODY -->
     <div id="root"></div>
   </body>
